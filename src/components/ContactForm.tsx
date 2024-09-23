@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [responseMessage, setResponseMessage] = useState("");
 
   // Handle form submission
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Make the POST request to the backend
